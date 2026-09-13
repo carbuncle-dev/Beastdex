@@ -1,0 +1,20 @@
+<Project Sdk="Dalamud.NET.Sdk/15.0.0">
+  <PropertyGroup>
+    <Version>0.8.5.1</Version>
+    <AssemblyVersion>0.8.5.1</AssemblyVersion>
+    <FileVersion>0.8.5.1</FileVersion>
+    <PackageProjectUrl>https://github.com/carbuncle-dev/Beastdex</PackageProjectUrl>
+    <Description>Beastmaster field guide and compact tracker with convenience-first capture sources, encounter icons, optional BST target markers, map flags and travel.</Description>
+    <Authors>carbuncle-dev</Authors>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <Platforms>x64</Platforms>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- Tests link the pure decoders/adapters but must never enter the plugin DLL. -->
+    <Compile Remove="Tests/**/*.cs" />
+  </ItemGroup>
+</Project>

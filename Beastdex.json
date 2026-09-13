@@ -1,0 +1,15 @@
+{
+  "Author": "carbuncle-dev",
+  "Name": "Beastdex",
+  "Punchline": "A charcoal-and-gold field guide and slim next-catch HUD.",
+  "Description": "Game-derived familiar names, images and obtained checkmarks. Prefer level-ready common overworld sources, then duties, FATEs and elite hunts. Includes encounter icons, optional BST nameplate markers, automatic bestiary loading/refresh, grouped map flags and Lifestream travel. Community reports are guidance, not independent capture verification.",
+  "RepoUrl": "https://github.com/carbuncle-dev/Beastdex",
+  "IconUrl": "https://raw.githubusercontent.com/carbuncle-dev/Beastdex/main/images/icon.png",
+  "ApplicableVersion": "any",
+  "Tags": [
+    "beastmaster",
+    "bestiary",
+    "utility"
+  ],
+  "AssemblyVersion": "0.8.5.1"
+}

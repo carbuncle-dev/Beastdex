@@ -1,0 +1,57 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <LangVersion>latest</LangVersion>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="FakeXbmManager.cs" />
+    <Compile Include="MetadataTests.cs" />
+    <Compile Include="WorldTests.cs" />
+    <Compile Include="SourceTests.cs" />
+    <Compile Include="../Models/WorldData.cs" Link="Source/WorldData.cs" />
+    <Compile Include="../Services/SpawnMatching.cs" Link="Source/SpawnMatching.cs" />
+    <Compile Include="../Services/LayoutNpcReader.cs" Link="Source/LayoutNpcReader.cs" />
+    <Compile Include="../Models/BeastInfo.cs" Link="Source/BeastInfo.cs" />
+    <Compile Include="../Models/BestiaryLocation.cs" Link="Source/BestiaryLocation.cs" />
+    <Compile Include="../Models/XbmMetadataRow.cs" Link="Source/XbmMetadataRow.cs" />
+    <Compile Include="../Services/XbmSheetLayout.cs" Link="Source/XbmSheetLayout.cs" />
+    <Compile Include="../Services/XbmMetadataDecoder.cs" Link="Source/XbmMetadataDecoder.cs" />
+    <Compile Include="../Models/XbmPetSetting.cs" Link="Source/XbmPetSetting.cs" />
+    <Compile Include="../Services/XbmPetSettingDecoder.cs" Link="Source/XbmPetSettingDecoder.cs" />
+    <Compile Include="../Interop/MappedXbmManagerReader.cs" Link="Source/MappedXbmManagerReader.cs" />
+    <None Update="Fixtures/captured-settings.hex" CopyToOutputDirectory="PreserveNewest" />
+    <Compile Include="../Services/SpawnGrouping.cs" Link="Source/SpawnGrouping.cs" />
+    <Compile Include="../Services/SpawnDiscovery.cs" Link="Source/SpawnDiscovery.cs" />
+    <Compile Include="../Services/CommunityParsers.cs" Link="Source/CommunityParsers.cs" />
+    <Compile Include="../Services/CommunityReportBinder.cs" Link="Source/CommunityReportBinder.cs" />
+    <Compile Include="../Services/PublicDataCache.cs" Link="Source/PublicDataCache.cs" />
+    <Compile Include="../Services/CommunityWorldLoader.cs" Link="Source/CommunityWorldLoader.cs" />
+    <Compile Include="PlanningTests.cs" />
+    <Compile Include="PreferenceTests.cs" />
+    <Compile Include="IdentityAndMarkerTests.cs" />
+    <Compile Include="MarkerLayoutTests.cs" />
+    <Compile Include="../Services/NameplateMarkerSizing.cs" />
+    <Compile Include="../Windows/UiIconLayout.cs" />
+    <Compile Include="../Services/ReportIdentity.cs" />
+    <Compile Include="../Services/EncounterPresentation.cs" />
+    <Compile Include="../Services/BeastTargetMatching.cs" />
+    <Compile Include="ThemeTests.cs" />
+    <Compile Include="StartupTests.cs" />
+    <Compile Include="../Services/BestiaryStartupController.cs" Link="Source/BestiaryStartupController.cs" />
+    <Compile Include="../Services/BestiaryUserInput.cs" Link="Source/BestiaryUserInput.cs" />
+    <Compile Include="../Windows/GameUiPalette.cs" Link="Source/GameUiPalette.cs" />
+    <Compile Include="../Services/EncounterPolicy.cs" />
+    <Compile Include="../Models/CapturePlan.cs" />
+    <Compile Include="../Models/XbmCaptureSnapshot.cs" />
+    <Compile Include="../Services/TravelPlanning.cs" />
+    <Compile Include="../Services/SourceReconciler.cs" />
+    <Compile Include="../Services/CatchPlanner.cs" />
+    <Compile Include="../Services/RefreshPolicy.cs" />
+  </ItemGroup>
+</Project>
